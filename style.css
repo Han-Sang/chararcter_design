@@ -25,10 +25,9 @@
     font-weight: 600;
     text-align: center;
     line-height: 300px;
-    border: 1px solid;
     transform-style: preserve-3d;
     transform: perspective(1500px);
-    z-index: 10;
+    
   }
     .door {
     width: 800px;
@@ -41,6 +40,7 @@
     transform-style: preserve-3d;
     transform-origin: right;
     transition: all 2s;
+    z-index: 10;
   }
 
     .door::after {
@@ -58,7 +58,7 @@
     background-color: white;
   } 
       
-    .joker {
+    .pierrot {
         position: relative;
         top: 10px;
         margin: 300px auto;
@@ -67,7 +67,7 @@
         animation: 얼굴 1s infinite alternate;
     }
 
-    .joker .plaster {
+    .pierrot .plaster {
         position: absolute;
         top: 175px;
         left: 50px;
@@ -80,13 +80,13 @@
         z-index: 3;
     }
 
-    .joker .plaster:hover {
+    .pierrot .plaster:hover {
         
         background-color:darkturquoise;
         border-color: red;   
     }
 
-    .joker .plasterband {
+    .pierrot .plasterband {
         position: absolute;
         top: 205px;
         left: 55px;
@@ -96,11 +96,11 @@
         border: 1px solid rgb(250, 190, 119);
         border-radius: 20%;
         transform: rotate(-30deg);
-        z-index: 4;
+        z-index: 3;
         
     }
 
-    .joker .injurytop{
+    .pierrot .injurytop{
         position: absolute;
         top: 140px;
         right: 1px;
@@ -112,7 +112,7 @@
         z-index: 1;
     }
 
-    .joker .injurymiddle {
+    .pierrot .injurymiddle {
         position: absolute;
         top: 155px;
         right: 13px;
@@ -125,7 +125,7 @@
         z-index: 1;
     }
     
-    .joker .injurybottom {
+    .pierrot .injurybottom {
         position: absolute;
         top: 170px;
         right: 20px;
@@ -137,7 +137,7 @@
         z-index: 1;
     }
 
-    .joker .injuryvertical{
+    .pierrot .injuryvertical{
         position: absolute;
         top: 120px;
         right: 30px;
@@ -150,7 +150,7 @@
         z-index: 1;
     }
 
-    .joker .눈썹.왼쪽 {
+    .pierrot .눈썹.왼쪽 {
         position: absolute;
         bottom: 270px;
         left: 30px;
@@ -163,7 +163,7 @@
         
         
     }
-    .joker .눈썹.왼쪽.가리개 {
+    .pierrot .눈썹.왼쪽.가리개 {
         position: absolute;
         bottom: 265px;
         left: 30px;
@@ -176,7 +176,7 @@
         animation: 왼쪽눈썹 0.5s infinite alternate;
     }
 
-    .joker .눈썹.오른쪽 {
+    .pierrot .눈썹.오른쪽 {
         position: absolute;
         bottom: 270px;
         right: 30px;
@@ -188,7 +188,7 @@
         animation: 오른쪽눈썹 0.5s infinite alternate;   
     }
 
-    .joker .눈썹.오른쪽.가리개 {
+    .pierrot .눈썹.오른쪽.가리개 {
         position: absolute;
         bottom: 265px;
         right: 30px;
@@ -201,7 +201,7 @@
         border: 15px transparent solid;    
     }
    
-    .joker .hat {
+    .pierrot .hat {
         position: absolute;
         bottom: 100px;
         width: 150px;
@@ -211,7 +211,7 @@
        
     }
 
-    .joker .hat.left {
+    .pierrot .hat.left {
         background-color: rgb(239, 82, 97);
         border: 10px solid rgb(205, 69, 66);
         bottom: 250px;
@@ -223,7 +223,7 @@
       
     }
 
-    .joker .hat.right {
+    .pierrot .hat.right {
        background-color: rgb(188, 206, 251);
        border: 10px solid rgb(29, 156 ,211);
         bottom: 250px;
@@ -234,7 +234,7 @@
         animation: 모자오른쪽 0.4s infinite alternate;
     }
    
-    .joker .hat.center{
+    .pierrot .hat.center{
         background-color: rgb(255, 194, 1);
         border: 10px solid rgb(218, 164, 0);
         bottom: 250px;
@@ -244,7 +244,7 @@
         animation: 모자가운데 0.4s infinite alternate;
     }
 
-    .joker .hatcircle.left {
+    .pierrot .hatcircle.left {
         position: absolute;
         top: -60px;
         right: 100px;
@@ -258,7 +258,7 @@
        
     }
 
-    .joker .hatcircle.right {
+    .pierrot .hatcircle.right {
         position: absolute;
         top: -70px;
         left: 60px;
@@ -271,7 +271,7 @@
         animation: 모자구슬 0.4s infinite alternate;
     }
     
-    .joker .hatcircle.center {
+    .pierrot .hatcircle.center {
         position: absolute;
         top: -80px;
         left: 20px;
@@ -284,7 +284,7 @@
         animation: 모자구슬 1s infinite alternate;
     }
 
-    .joker .face {
+    .pierrot .face {
         position: absolute;
         top: 80px;
         right: 40px;
@@ -296,33 +296,33 @@
         animation: 가면 0.4s infinite alternate;
     }
 
-    .joker .eye {
+    .pierrot .eye {
         position: absolute;
         top: 110px;
         z-index: 3;     
     }
 
-    .joker .eye.leftrow, .joker .eye.leftvertical{
+    .pierrot .eye.leftrow, .pierrot .eye.leftvertical{
         background: black;
         animation: 왼쪽눈 1s infinite alternate;
     }
 
    
-    .joker .eye.leftrow{
+    .pierrot .eye.leftrow{
         top: 120px;
         left: 55px;
         width: 50px;
         height: 20px;
         
     }
-    .joker .eye.leftvertical{
+    .pierrot .eye.leftvertical{
         top: 100px;
         left: 70px;
         width: 20px;
         height: 60px;
     }
 
-    .joker .eye.right {
+    .pierrot .eye.right {
         width: 40px;
         height: 40px;
         background: #000;
@@ -330,12 +330,12 @@
         right: 65px;
         border-radius: 50%; 
     }
-    .joker .eye.right:hover {    
+    .pierrot .eye.right:hover {    
         background-color:cyan;
        border: 3px solid violet
     }
     
-    .joker .eye.righttriangleup {
+    .pierrot .eye.righttriangleup {
         width: 5px;
         height: 5px;
         background: transparent;
@@ -346,11 +346,11 @@
         border-right: 30px solid transparent;
 
     }
-    .joker .eye.righttriangleup:hover{
+    .pierrot .eye.righttriangleup:hover{
         border-bottom: 70px solid blue;
     }
 
-    .joker .eye.righttrianglebottom {  
+    .pierrot .eye.righttrianglebottom {  
         width: 10px;
         height: 10px;
         background: transparent;
@@ -361,11 +361,11 @@
         border-right: 30px solid transparent;
     }
 
-    .joker .eye.righttrianglebottom:hover{
+    .pierrot .eye.righttrianglebottom:hover{
         border-top: 70px solid lightsalmon;
     }
 
-    .joker .nose {
+    .pierrot .nose {
         position: absolute;
         top: 170px;
         left: 120px;
@@ -377,11 +377,11 @@
         box-shadow: 2px 2px 5px 10px var(--pri);
         animation: 코 0.5s infinite alternate;
     }
-    .joker .nose:hover {
+    .pierrot .nose:hover {
         background-color:lime; 
     }
 
-    .joker .mouthrmakeup {
+    .pierrot .mouthrmakeup {
         position: absolute;
         width: 180px;
         height: 110px;
@@ -396,7 +396,7 @@
         
     }
 
-    .joker .mouthmakeupblind {
+    .pierrot .mouthmakeupblind {
         position: absolute;
         width: 220px;
         height: 120px;
@@ -409,7 +409,7 @@
         z-index: 1;
     }
     
-    .joker .mouth {
+    .pierrot .mouth {
         position: absolute;
         width: 120px;
         height: 120px;
@@ -421,7 +421,7 @@
         background: transparent;
         animation: 입 0.5s infinite alternate;
     }
-    .joker .mouthblind {
+    .pierrot .mouthblind {
         position: absolute;
         width: 150px;
         height: 100px;
